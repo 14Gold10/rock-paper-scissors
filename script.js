@@ -1,4 +1,5 @@
-let computerPlay = ['rock', 'paper', 'scissors'];
+function computerPlay = {
+  ['rock', 'paper', 'scissors'];
 
 function playRound {
   // your code here!
