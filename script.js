@@ -3,8 +3,8 @@ function computerPlay(){
   var item = items[Math.floor(Math.random() * items.length)]; document.write(item);
 }
 
-var playerChoice = prompt("Enter rock, paper, or scissors");
-let playerSelection = return prompt(playerChoice);
+let playerSelection = prompt("Enter rock, paper, or scissors");
+console.log(playerSelection);
 let computerSelection = computerPlay();
 
 if(playerSelection == computerSelection){
