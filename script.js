@@ -1,5 +1,5 @@
 function computerPlay(){
-  var items = ['rock', 'paper', 'scissors'];
+  var items = ["rock", "paper", "scissors"];
   var item = items[Math.floor(Math.random() * items.length)]; document.write(item);
 }
 
