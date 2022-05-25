@@ -10,7 +10,7 @@ let computerSelection = computerPlay();
 if(playerSelection == computerSelection){
   alert("Tie!");
 }
-else if(((playerSelection == "rock") && (computerSelection == "scissors")) || ((playerSelection == "paper") && (computerSelection == "rock")) || ((playerSelection = "scissors") && (computerSelection = "paper"))){
+else if((((playerSelection == "rock") && (computerSelection == "scissors")) || ((playerSelection == "paper") && (computerSelection == "rock"))) || ((playerSelection = "scissors") && (computerSelection = "paper"))){
   alert("You win!");
 }
 else {
