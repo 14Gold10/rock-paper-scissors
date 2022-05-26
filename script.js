@@ -6,13 +6,38 @@ function computerPlay(){
 let playerSelection = prompt("Enter rock, paper, or scissors");
 console.log(playerSelection);
 let computerSelection = computerPlay();
+console.log(computerSelection);
 
-if(playerSelection == computerSelection){
-  alert("Tie!");
+if(playerSelection == "rock") {
+  if(computerSelection == "rock") {
+    alert("Tie!");
+  }
+  else if(computerSelection == "scissors") {
+    alert("You win! Rock beats scissors.");
+  }
+  else {
+    alert("You lose! Rock is beaten by paper.");
+  }
 }
-else if((((playerSelection == "rock") && (computerSelection == "scissors")) || ((playerSelection == "paper") && (computerSelection == "rock"))) || ((playerSelection = "scissors") && (computerSelection = "paper"))){
-  alert("You win!");
+else if(playerSelection == "paper") {
+  if(computerSelection == "paper") {
+    alert("Tie!");
+  }
+  else if(computerSelection == "rock") {
+    alert("You win! Paper beats rock.");
+  }
+  else {
+    alert("You lose! Paper is beaten by scissors.");
+  }
 }
 else {
-  alert("You lose!");
+  if(computerSelection == "scissors") {
+    alert("Tie!");
+  }
+  else if(computerSelection == "paper") {
+    alert("You win! Scissors beats paper.");
+  }
+  else {
+    alert("You lose! Scissors is beaten by rock.");
+  }
 }
