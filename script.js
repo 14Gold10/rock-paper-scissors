@@ -6,36 +6,24 @@ function computerPlay(){
 let computerSelection = computerPlay();
 let playerSelection = prompt("Enter rock, paper, or scissors");
 
-if(playerSelection == "rock") {
-  if(computerSelection == "rock") {
-    alert("Tie!");
-  }
-  else if(computerSelection == "scissors") {
-    alert("You win! Rock beats scissors.");
-  }
-  else {
-    alert("You lose! Rock is beaten by paper.");
-  }
+if((playerSelection == "rock") && (computerSelection == "scissors")) {
+  alert("You win! Rock beats scissors.");
 }
-else if(playerSelection == "paper") {
-  if(computerSelection == "paper") {
-    alert("Tie!");
-  }
-  else if(computerSelection == "rock") {
-    alert("You win! Paper beats rock.");
-  }
-  else {
-    alert("You lose! Paper is beaten by scissors.");
-  }
+else if((playerSelection == "rock") && (computerSelection == "paper")) {
+  alert("You lose! Rock is beaten by paper.");
+}
+else if((playerSelection == "paper") && (computerSelection == "rock")) {
+  alert("You win! Paper beats rock.");
+}
+else if((playerSelection == "paper") && (computerSelection == "scissors")) {
+  alert("You lose! Paper is beaten by scissors.");
+}
+else if((playerSelection == "scissors") && (computerSelection == "paper")) {
+  alert("You win! Scissors beats paper!");
+}
+else if((playerSelection == "scissors") && (computerSelection == "rock")) {
+  alert("You lose! Scissors is beaten by rock.");
 }
 else {
-  if(computerSelection == "scissors") {
-    alert("Tie!");
-  }
-  else if(computerSelection == "paper") {
-    alert("You win! Scissors beats paper.");
-  }
-  else {
-    alert("You lose! Scissors is beaten by rock.");
-  }
+  alert("Tie!");
 }
