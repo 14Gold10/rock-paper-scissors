@@ -5,6 +5,7 @@ function computerPlay(){
 
 let computerSelection = computerPlay();
 let playerSelection = prompt("Enter rock, paper, or scissors");
+return prompt(playerSelection);
 
 if ((playerSelection == "rock") && (computerSelection == "scissors")) {
   document.write("You win! Rock beats scissors.");
