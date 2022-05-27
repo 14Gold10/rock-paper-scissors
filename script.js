@@ -7,23 +7,23 @@ let computerSelection = computerPlay();
 let playerSelection = prompt("Enter rock, paper, or scissors");
 
 if((playerSelection == "rock") && (computerSelection == "scissors")) {
-  alert("You win! Rock beats scissors.");
+  document.write("You win! Rock beats scissors.");
 }
 if((playerSelection == "rock") && (computerSelection == "paper")) {
-  alert("You lose! Rock is beaten by paper.");
+  document.write("You lose! Rock is beaten by paper.");
 }
 if((playerSelection == "paper") && (computerSelection == "rock")) {
-  alert("You win! Paper beats rock.");
+  document.write("You win! Paper beats rock.");
 }
 if((playerSelection == "paper") && (computerSelection == "scissors")) {
-  alert("You lose! Paper is beaten by scissors.");
+ document.write("You lose! Paper is beaten by scissors.");
 }
 if((playerSelection == "scissors") && (computerSelection == "paper")) {
-  alert("You win! Scissors beats paper!");
+  document.write("You win! Scissors beats paper!");
 }
 if((playerSelection == "scissors") && (computerSelection == "rock")) {
-  alert("You lose! Scissors is beaten by rock.");
+  document.write("You lose! Scissors is beaten by rock.");
 }
 if(playerSelection == computerSelection) {
-  alert("Tie!");
+  document.write("Tie!");
 }
